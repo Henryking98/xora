@@ -8,7 +8,7 @@
   }
 
    body {
-    @apply font-poppins text-[16px] tracking-[-0.03em] text-p5 bg-s1;
+    @apply text-[16px] tracking-[-0.03em] text-p5 bg-s1;
   }
 
   a {
@@ -76,6 +76,10 @@
 
   .h6 {
     @apply text-[24px] font-medium leading-[36px];
+  }
+  
+  .img {
+    @apply block max-w-full;
   }
 
   .body-1 {
@@ -330,4 +334,9 @@
   }
 
   /*  END of Footer*/
+  
+  /* Shad Button */
+  .shad-btn {
+    @apply lg:hidden z-2 size-10 border-2 border-s4/25 rounded-full flex justify-center items-center bg-none tracking-[-0.03em] !important;
+  }
 }

@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
+// import {Button} from "@/components/ui/button";
+
 
 interface NavLinkProps {
   title: string;
@@ -16,7 +18,7 @@ const Header: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setHasScrolled(window.scrollY > 32);
+      setHasScrolled(window.scrollY > 35);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -31,7 +33,7 @@ const Header: React.FC = () => {
     if (element) {
       element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-    setIsOpen(false); // Close the menu
+    setIsOpen(false);
   };
 
   const NavLink: React.FC<NavLinkProps> = ({ title, onClick }) => (
@@ -114,14 +116,16 @@ const Header: React.FC = () => {
         </div>
 
         <button
-          className="lg:hidden z-2 size-10 border-2 border-s4/25 rounded-full flex justify-center items-center"
-          onClick={() => setIsOpen((prevState) => !prevState)}
+            className="shad-btn cursor-pointer"
+            onClick={() => setIsOpen((prevState) => !prevState)}
+            // asChild={true}
         >
           <Image
+            // src={isOpen ? "/images/close." : "/images/magic.svg"}
             src={`/images/${isOpen ? "close" : "magic"}.svg`}
             alt="magic"
-            width={24}
-            height={24}
+            width={50}
+            height={50}
             className="size-1/2 object-contain"
           />
         </button>
