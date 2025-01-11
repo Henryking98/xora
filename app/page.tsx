@@ -1,7 +1,9 @@
+import Header from "@/components/Header";
+
 export default function Home() {
   return (
-    <div className="flex-center h-screen">
-      <h1 className="h1">Xora - The only storage solution you need.</h1>
-    </div>
+    <main className="overflow-hidden">
+        <Header />
+    </main>
   );
 }
