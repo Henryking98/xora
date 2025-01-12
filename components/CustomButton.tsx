@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import {Button} from "@/components/ui/button";
+// import {Button} from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import { MouseEventHandler } from "react";
@@ -54,7 +54,7 @@ const CustomButton = ({ icon, children, href, containerClassName, onClick, marke
       <Inner />
     </Link>
   ) : (
-    <Button
+    <button
       className={clsx(
         "relative p-0.5 g5 rounded-2xl shadow-500 group",
         containerClassName,
@@ -62,7 +62,7 @@ const CustomButton = ({ icon, children, href, containerClassName, onClick, marke
       onClick={onClick}
     >
       <Inner />
-    </Button>
+    </button>
   );
 };
 export default CustomButton;

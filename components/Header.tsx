@@ -78,7 +78,11 @@ const Header: React.FC = () => {
                 </li>
 
                 <li className="nav-logo">
-                  <Link href="#hero" passHref className="max-lg:hidden transition-transform duration-500 cursor-pointer">
+                  <Link 
+                        href="#hero" 
+                        passHref
+                        className={clsx("max-lg:hidden transition-transform duration-500 cursor-pointer", hasScrolled && "scale-[.70]")}
+                    >
                       <Image
                         src="/images/xora.svg"
                         width={160}

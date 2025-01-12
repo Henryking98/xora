@@ -1,5 +1,4 @@
 // import { Element, Link as LinkScroll } from "react-scroll";
-// import Button from "../components/CustomButton";
 import Image from "next/image"
 import CustomButton from "./CustomButton";
 
@@ -20,9 +19,7 @@ const Hero = () => {
               learn, and surprisingly powerful.
             </p>
             {/* <LinkScroll to="features" offset={-100} spy smooth> */}
-              <CustomButton 
-                icon="/images/zap.svg"
-            >
+              <CustomButton icon="/images/zap.svg">
                 Try it now
             </CustomButton>
             {/* </LinkScroll> */}
