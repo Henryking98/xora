@@ -51,7 +51,7 @@
 @layer utilities {
   /* START of Typography */
   .h-num {
-    @apply font-inter text-[72px] font-bold leading-[84px];
+    @apply text-[72px] font-bold leading-[84px];
   }
 
   .h1 {

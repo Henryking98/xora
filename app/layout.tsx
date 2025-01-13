@@ -49,7 +49,7 @@ const workSans = localFont({
 })
 export const metadata: Metadata = {
   title: "Xora",
-  description: "Xora",
+  description: "Saas Landing Page",
 };
 
 export default function RootLayout({
